@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conversor de Temperaturas</title>
+</head>
+<body>
+  <h1>Conversor de Temperaturas</h1>
+  <label for="inputTemp">Temperatura en grados:</label>
+  <input type="number" id="inputTemp" placeholder="Ingrese la temperatura">
+
+  <label for="selectFrom">Convertir de:</label>
+  <select id="selectFrom">
+    <option value="celsius">Celsius</option>
+    <option value="fahrenheit">Fahrenheit</option>
+    <option value="kelvin">Kelvin</option>
+  </select>
+
+  <label for="selectTo">Convertir a:</label>
+  <select id="selectTo">
+    <option value="celsius">Celsius</option>
+    <option value="fahrenheit">Fahrenheit</option>
+    <option value="kelvin">Kelvin</option>
+  </select>
+
+  <button onclick="convertirTemperatura()">Convertir</button>
+
+  <script src="/js/caculartem.js"></script>
+</body>
+</html>

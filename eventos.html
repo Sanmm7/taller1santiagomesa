@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos JavaScript</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Eventos JavaScript</h1>
+  <table>
+    <tr>
+      <th>Evento</th>
+      <th>Ejemplo de aplicación</th>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td><button id="myButton">Haz clic aquí</button></td>
+    </tr>
+    <tr>
+      <td>mouseover</td>
+      <td><div id="myElement">Pasa el mouse aquí</div></td>
+    </tr>
+    <tr>
+      <td>keydown</td>
+      <td><input type="text" id="myInput" placeholder="Presiona una tecla"></td>
+    </tr>
+    <tr>
+      <td>submit</td>
+      <td>
+        <form id="myForm">
+          <input type="text" name="name" placeholder="Nombre">
+          <input type="email" name="email" placeholder="Correo electrónico">
+          <button type="submit">Enviar</button>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td>load</td>
+      <td><p>La página se ha cargado completamente</p></td>
+    </tr>
+    <tr>
+      <td>mouseenter</td>
+      <td><div id="myElement">Pasa el mouse aquí</div></td>
+    </tr>
+    <tr>
+      <td>mouseleave</td>
+      <td><div id="myElement">Pasa el mouse aquí</div></td>
+    </tr>
+    <tr>
+      <td>scroll</td>
+      <td><p>Desplázate por la página</p></td>
+    </tr>
+    <tr>
+      <td>focus</td>
+      <td><input type="text" id="myInput" placeholder="Haz clic aquí"></td>
+    </tr>
+    <tr>
+      <td>blur</td>
+      <td><input type="text" id="myInput" placeholder="Haz clic fuera"></td>
+    </tr>
+  </table>
+
+  <script src="/js/eventos.js"></script>
+</body>
+</html>

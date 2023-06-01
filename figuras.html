@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cálculo de Perímetro y Área de Figuras Geométricas</title>
+  <link rel="stylesheet" type="text/css" href="/css/estilosfiguras.css">
+</head>
+<body>
+  <h1>Cálculo de Perímetro y Área de Figuras Geométricas</h1>
+
+  <div class="container">
+    <div class="card">
+      <h2>Círculo</h2>
+      <button onclick="openModal('circle')">Perímetro</button>
+      <button onclick="openModal('circle')">Área</button>
+    </div>
+
+    <div class="card">
+      <h2>Triángulo</h2>
+      <button onclick="openModal('triangle')">Perímetro</button>
+      <button onclick="openModal('triangle')">Área</button>
+    </div>
+
+    <div class="card">
+      <h2>Rectángulo</h2>
+      <button onclick="openModal('rectangle')">Perímetro</button>
+      <button onclick="openModal('rectangle')">Área</button>
+    </div>
+
+    <div class="card">
+      <h2>Cuadrado</h2>
+      <button onclick="openModal('square')">Perímetro</button>
+      <button onclick="openModal('square')">Área</button>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <label for="input1">Lado 1(radio en caso de circulo):</label>
+      <input type="number" id="input1">
+      <label for="input2">Lado 2:</label>
+      <input type="number" id="input2">
+      <button onclick="calcular()">Calcular</button>
+      <div id="resultado"></div>
+    </div>
+  </div>
+
+  <script src="/js/logicfigurasper.js"></script>
+</body>
+</html>
