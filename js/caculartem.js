@@ -1,12 +1,12 @@
 function convertirTemperatura() {
-    // Obtener el valor ingresado por el usuario
+    
     var temperatura = parseFloat(document.getElementById("inputTemp").value);
   
-    // Obtener las unidades de conversión seleccionadas
+    
     var from = document.getElementById("selectFrom").value;
     var to = document.getElementById("selectTo").value;
   
-    // Realizar la conversión
+    
     var resultado;
   
     if (from === "celsius" && to === "fahrenheit") {
@@ -26,7 +26,7 @@ function convertirTemperatura() {
       alert("No se puede convertir, revise su seleccion")
     }
   
-    // Mostrar el resultado en una alerta con dos cifras decimales
+    
     alert("El resultado de la conversión es: " + resultado.toFixed(2));
   }
   
